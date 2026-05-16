@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f5f5;
+}
+
+.box {
+  background: red;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.box button {
+  margin-top: 20px; 
+  padding: 10px 25px;
+  background: white;
+  color: red;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.box button:hover{
+    background-color: rgb(248, 246, 243);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>Pinterest</h1>
+    <button onclick="goToHome()">Login</button>
+</div>
+
+<script>
+function goToHome() {
+    window.location.href = "log.html"; // correct file name podu
+}
+</script>
+</body>
+</html>

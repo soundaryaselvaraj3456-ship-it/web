@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Responsive Photo Gallery</title>
+
+<style>
+body {
+
+font-family: Arial, sans-serif;
+
+margin: 0;
+padding: 20px;
+background: #f4f4f4;
+
+}
+h2 {
+text-align: center;
+margin-bottom: 20px;
+
+}
+.gallery {
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+gap: 15px;
+}
+.gallery img {
+width: 100%;
+height: 200px;
+object-fit: cover;
+border-radius: 10px;
+
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+transition: transform 0.3s;
+
+}
+.gallery img:hover {
+transform: scale(1.05);
+
+}
+</style>
+</head>
+<body>
+
+<h2>Pinterest</h2>
+<div class="gallery">
+
+<img src="https://i.pinimg.com/736x/ee/ae/44/eeae4486c7ab153f7d1cf5ed03cd7e65.jpg">
+<img src="https://i.pinimg.com/736x/28/49/4a/28494ac986fe386b6e6d81d3cf09b54c.jpg">
+<img src="https://i.pinimg.com/1200x/fd/bb/fa/fdbbfadcd52b54dda496d2f61e7151a7.jpg">
+<img src="https://i.pinimg.com/736x/b8/60/73/b8607397ebb05707045300cd5e96514e.jpg">
+<img src="https://i.pinimg.com/736x/c8/4b/5a/c84b5a4044e465719e8ec80fecdba719.jpg">
+<img src="https://i.pinimg.com/736x/d5/73/00/d5730090f47f128e6a422ec71861dd5a.jpg">
+<img src="https://i.pinimg.com/1200x/47/08/5c/47085ca75a198e01526e9377ec62765e.jpg">
+<img src="https://i.pinimg.com/736x/7c/2a/9b/7c2a9bbfe141698172f4434dc1076f70.jpg">
+<img src="https://i.pinimg.com/736x/53/9f/22/539f229ba1cbd6b9642f515eadecf3d0.jpg">
+<img src="https://i.pinimg.com/736x/7d/5e/09/7d5e09fe137114a8b084fd6deed9b719.jpg">
+<img src="https://i.pinimg.com/1200x/b7/af/97/b7af97e85f839e2e7ff5944c0d2abe68.jpg">
+<img src="https://i.pinimg.com/736x/97/65/76/976576b04a0f53e30e7697baa83191ea.jpg">
+<img src="https://i.pinimg.com/736x/07/27/4d/07274d7bf23cf319a71117cd3bc0df82.jpg">
+<img src="https://i.pinimg.com/736x/2e/9d/15/2e9d15a6569f57aff1429a80f1b9ea97.jpg">
+<img src="https://i.pinimg.com/736x/a6/87/a4/a687a4a70361ca87ef1dcdbe138a8c25.jpg">
+<img src="https://i.pinimg.com/736x/4a/7f/9a/4a7f9a49a1037fdb11ee036da589a3d1.jpg">
+<img src="https://i.pinimg.com/736x/20/0c/71/200c713f7bfac7dc33813175affd7dd0.jpg">
+<img src="https://i.pinimg.com/736x/0c/c5/82/0cc582e0acd2c6353623986f401b10f9.jpg">
+
+</div>
+</body>
+</html>

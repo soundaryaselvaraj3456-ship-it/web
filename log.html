@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Pinterest Style</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            padding: 40px;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .login-box h1 {
+            color: #e60023;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .input-box:focus {
+            border-color: #e60023;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #e60023;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #cc001f;
+        }
+
+        .extra {
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .extra a {
+            text-decoration: none;
+            color: #e60023;
+            font-weight: bold;
+        }
+
+        .extra a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h1>Login</h1>
+
+    <input type="text" class="input-box" placeholder="Email">
+    <input type="password" class="input-box" placeholder="Password">
+
+    <button class="login-btn">Log in</button>
+    <button onclick="goToHome()">Login</button>
+
+    <div class="extra">
+        <p>Forgot your password?</p>
+        <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+</div>
+<script>
+function goToHome() {
+    window.location.href = "web.html"; 
+}
+</script>
+</body>
+</html>
